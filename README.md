@@ -16,12 +16,31 @@ Hay algunos pasos a seguir antes de subir tus codigos aquí, pero una vez que lo
 
 ### 1. Instala Git
 
+Puedes hacerlo en https://git-scm.com/downloads.
+
 ### 2. Clona el repositorio
+
+Abre una terminal y corre el siguiente comando para copiar los archivos del repositorio a tu computadora:
+
+`git clone https://github.com/erosethan/coding-gym.git`
 
 ### 3. Crea tu propia rama en el repositorio
 
+Crea tu propia rama en el repositorio, sientete libre de hacer tantos cambios como quieras en esa rama. Sin embargo, la rama principal `main` es la que consideraremos oficial para el repositorio, por lo que para integrar tus cambios a `main` necesitarás aprobación de un dueño del repositorio.
+
+`git checkout -b user/nombre_de_tu_usuario`
+
+Por ejemplo: `git checkout -b user/erosethan`
+
 ### 4. Escribe tu código y haz commit
+
+Antes de empezar a escribir tu código, obtén los últimos cambios del repositorio en tu rama. Esto incluirá todos los cambios que los demás y tu hayan hecho a la rama principal. Sin estos cambios, puede que estés viendo una versión anterior del repositorio.
+
+`git pull origin main --rebase`
 
 ### 5. Sube tus cambios al repositorio
 
+Cuando termines de escribir tu código, ejecuta el comando `git push` para subirlo al repositorio.
+
 ### 6. Crea un pull request y obtén aprobación
+
