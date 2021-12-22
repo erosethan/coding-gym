@@ -41,21 +41,26 @@ Antes de empezar a escribir tu código, obtén los últimos cambios del reposito
 Asegurate de crear tu propia carpeta en el repositorio con tu nombre de usuario, en esa carpeta escribe cualquier código que quieras subir.
 
 Checar cambios que haz hecho en la rama:
+
 `git status`
 
 Agregar un archivo especifico a tu commit:
+
 `git add direccion_del_archivo`
 
 Agregar todos los cambios al commit:
+
 `git add -A`
 
 Guardar los cambios del commit:
+
 `git commit`
 
 Guardar los cambios del commit con descripcion corta:
+
 `git commit -m "Descripcion corta del commit"`
 
-Tip: Intenta que la descripción de tus commits sea informativa y útil, es una buena práctica para que en el futuro seas un buen dev.
+Tip: Intenta que la descripción de tus commits sea informativa y útil, es una buena práctica para el futuro.
 
 ### 5. Sube tus cambios al repositorio
 
