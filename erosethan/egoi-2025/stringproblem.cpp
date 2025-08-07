@@ -13,7 +13,7 @@ struct Graph {
   void DFS(int u, int expected_slope) {
     if (visited[u]) return;
 
-    auto& [v, string_index] = attached[u];
+    auto [v, string_index] = attached[u];
     visited[u] = visited[v] = true;
 
     int expected_pin = (expected_slope - u + visited.size()) % visited.size();
