@@ -11,7 +11,7 @@ int main() {
   cin >> n;
 
   int log_n = 0;
-  while (1 << ++log_n < n) {}
+  while (1 << ++log_n < n);
 
   auto ScreamParity = []() {
     int screams;
@@ -44,6 +44,7 @@ int main() {
   }
 
   int b = a;
-  for (int i = 0; i < log_n; ++i) if (parity[i]) b ^= 1 << i;
+  for (int i = 0; i < log_n; ++i)
+    if (parity[i]) b ^= 1 << i;
   cout << "! " << a << ' ' << b << endl;
 }

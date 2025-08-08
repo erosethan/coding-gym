@@ -42,7 +42,7 @@ int main() {
     cin >> a >> b;
     pins.Attach(a, b, i);
 
-    int slope = (a + b) % (2 *n);
+    int slope = (a + b) % (2 * n);
     if (slope & 1) ++parallel_strings[slope / 2];
   }
 

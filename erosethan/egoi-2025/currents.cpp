@@ -5,6 +5,9 @@ using namespace std;
 
 constexpr int kInfinite = 1e9;
 
+using PriorityQueue = priority_queue<pair<int, int>, vector<pair<int, int>>,
+                                     greater<pair<int, int>>>;
+
 struct Graph {
   Graph(int n) : edges(n) {}
 
@@ -31,9 +34,7 @@ struct Graph {
 
   vector<int> Dijkstra(const vector<int>& reverse_dist) {
     vector<int> dist(edges.size(), kInfinite);
-    priority_queue<pair<int, int>,
-                   vector<pair<int, int>>,
-                   greater<pair<int, int>>> pq;
+    PriorityQueue pq;
 
     dist.back() = 0;
     pq.push({0, edges.size() - 1});
@@ -73,6 +74,7 @@ int main() {
   }
 
   auto dist = reverse_caves.Dijkstra(caves.BFS());
-  for (int d : dist) if (d) cout << d << ' ';
+  for (int d : dist)
+    if (d) cout << d << ' ';
   cout << '\n';
 }
