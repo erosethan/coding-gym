@@ -90,6 +90,6 @@ int main() {
 
   Field field(n, m);
   auto [pyramid, chamber] = field.LocatePyramid(a, b, c, d);
-  cout << pyramid.left + 1 << ' ' << pyramid.up + 1 << '\n';
-  cout << chamber.left + 1 << ' ' << chamber.up + 1 << '\n';
+  cout << pyramid.left + 1 << ' ' << pyramid.up + 1 << '\n'
+       << chamber.left + 1 << ' ' << chamber.up + 1 << '\n';
 }
