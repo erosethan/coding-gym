@@ -77,7 +77,7 @@ int main() {
   }
 
   for (auto list : lists) {
-    for (int i = 1; list; list >>= 1, ++i)
+    for (int i = 0; list; list >>= 1, ++i)
       if (list & 1) cout << i << ' ';
     cout << '\n';
   }
